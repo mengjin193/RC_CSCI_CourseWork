@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en-US"> <!-- Declare the language of the document -->
+<head>
+	<title>Tutorial Try</title>
+	<link rel="stylesheet" href="TutorialStyle.css"><!-- ExternalCSS -->
+	<!-- can also link a css from a full URL:
+		 <link rel="stylesheet" type="text/css" href=""> -->
+	<style type="text/css"> /*Internal CSS*/
+		h4	{color: skyblue}
+	</style>
+</head>
+<body style="background-color: thistle">
+<!--
+	<tagname>Content goes in the middle</tagname>
+	lowercase tag
+-->	
+	
+<div id="firstHeading" style="">
+	World
+	<h1 style="font-family: verdana">This is the <span style="color: red">biggst</span> heading</h1>
+</div>
+	<h2 style="color: dodgerblue">One heading</h2>
+	<h3 style="background-color: tomato">Two headings</h3>
+	<h4>Three little headings</h4>
+
+	<a href="PixelPic.html" target="_blank">Pixel thing, WildCat Pic</a>
+
+
+	<h1 style="font-size: 60px">Can set a heading even bigger</h1>
+	<p id="p01" class="normal" title="I don't know what should be the title" style="text-align: right;">This is a paragraph, aligning right</p><!-- title provides additional "tool-tip" information -->
+	
+	Lorem <b>ipsum</b> dolor <strong>sit</strong> amet, <i>consectetur</i> adipisicing elit, <em>sed</em> do eiusmod
+	tempor <mark>incididunt</mark> ut labore et <small>dolore</small> magna aliqua. <del>Ut enim</del> ad minim <ins>veniam</ins>,
+	quis <sub>nostrud</sub> exercitation <sup>ullamco</sup> laboris nisi <q>ut aliquip ex ea</q> commodo <!-- inline quote -->
+	<blockquote cite="https://www.w3schools.com/html/html_quotation_elements.asp">consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</blockquote> 
+	cillum dolore <abbr title="Europe">eu</abbr> <!-- 缩写 --> fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+	<div class="cities">
+  		<h2>London</h2>
+  		<p>London is the capital of England.</p>
+	</div>
+
+	<div class="cities">
+	  <h2>Paris</h2>
+	  <p>Paris is the capital of France.</p>
+	</div>
+
+
+	<hr><!-- (horizontal rules) horizontal line -->	
+	
+	<br><!-- (line break) nextline -->
+
+	<a href="http://www.baidu.com/" target="_blank" title="Got to Baidu"><!--Image as link-->
+		<img src="J:\Picture\71c7ff3d967016c80a4667c0b169f62a.jpg" alt="me" style="float: right; width:100px;height:100px;border:0;max-width: 100%">
+	</a>
+	<button>This button does nothing</button>
+
+	<ul style="list-style-type: circle;">
+		<li> <!-- open link in a blank page instead of _self; _parent: open in the parent frame; 
+		 		  _top: open in the full body of the window(new brower tag)
+		 		  framename: open in a named frame--> 
+			<a href="https://www.w3schools.com/html/html_colors.asp" target="_blank" style="background-color: violet">HTML Colors</a>
+		</li>
+		<li>
+			<a href="https://www.w3schools.com/html/html_blocks.asp" target="_blank">HTML Blocks -> classes(&JS) -> id</a>
+		</li>
+		<li>
+			<a href="https://www.w3schools.com/html/html_images.asp" target="_blank">Images (maps, background image)</a>
+		</li>
+		<li>
+			<a href="https://www.w3schools.com/html/html_lists.asp" target="_blank">HTML List (build菜单栏）-> Tables</a>
+		</li>
+		<li>
+			<a href="https://www.w3schools.com/html/html_scripts.asp" target="_blank">inFile JS -> meta (set viewpoint) -> layout (different sec & col) -> responsive page layout</a>
+		</li>
+		<li>
+			<a href="https://www.w3schools.com/html/html_entities.asp" target="_blank">entities (special notations) -> symbols -> character sets -> encode</a>
+		</li>
+		<li>
+			<a href="https://www.w3schools.com/html/html_links.asp" target="_blank">HTML Link (bookmark)</a>
+		</li>
+	</ul>
+
+	<ol type="1" start="0"> <!-- 1,2,3 type list, starting from 0 -->
+		<li>Lunch</li> <!-- nested list -->
+			<dl> <!-- discription list -->
+				<dt>Hot Chocolate</dt> <!-- item -->
+				<dd>- half chocolate</dd> <!-- discription -->
+				<dt>Milk</dt>
+				<dd>- warm</dd>
+				<dt>Soda</dt>
+				<dd>- coke</dd>
+			</dl>
+		<li>BUS hw</li>
+		<li>302 Tutoring Session</li>
+	</ol>
+
+	<pre>
+	<code> <!-- computer code -->
+		int x = 3;
+		System.out.println();
+	</code>
+	</pre>
+
+	<kbd>shift + S</kbd> <!-- keyboard input -->
+	<samp>Error</samp> <!-- browser's default monospace font -->
+	<var>E</var> = <var>mc</var><sup>2</sup>.
+
+	<!-- preformatted text -->
+	<pre>
+		bulabulabula
+
+		lulululululu
+
+		bulabulabula
+	</pre>
+<!-- -------------------------------------------------------------- -->
+	<table id="table001">
+		<caption><b>Spring 2019<em></caption>
+		<tr> <!-- row -->
+			<th>Class Namber</th> <!-- header -->
+			<th>Class Name</th>
+			<th>Class Credit</th>
+		</tr>
+		<tr>
+			<td>ARTS 324</td> <!-- data/cell -->
+			<td>Studio: Drawing</td>
+			<td rowspan="3">3</td> <!-- colspan 合并行 -->
+		</tr>
+		<tr>
+			<td>BUS 151</td>
+			<td>Introduction to Business</td>
+		</tr>
+		<tr>
+			<td>CSCI 346</td>
+			<td>Software Development</td>
+		</tr>
+		<tr>
+			<td>DANC 132</td>
+			<td>Elementary Dance Technique</td>
+			<td>1</td>
+		</tr>
+	</table>
+
+	<iframe src="FirstPage.html" width="1000" height="700" style="border: 2px solid skyblue"></iframe>
+<!-- -------------------------------------------------------------- -->
+
+	<canvas id="wildCat" width="400" height="300" style="border: 2px solid mediumseagreen">
+
+	</canvas>
+
+	
+
+
+	<hr>
+	<a href=""></a> <!-- locol link -->
+	<address>
+		Mengjin Sun<br>
+		Randolph College<br>
+		2500 Rivermont Ave.<br>
+		Lynchburg, VA 24503, USA<br>
+	</address>
+	
+	<br>
+	<cite>Tutorial Try</cite> by Mengjin Sun, Spring 2019 
+	<bdo dir="rtl">02-06-2019</bdo> <!-- 从右往左写 -->
+
+	<a href="W:\CSCI 346\Project\PixelPic.html" target="_blank"> WILDCAT</a>
+	
+
+</body>
+</html>

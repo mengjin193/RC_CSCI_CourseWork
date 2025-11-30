@@ -1,0 +1,54 @@
+#p01	{	/*pick specific thing with id*/
+
+	background-color: white;
+	color: orange;
+	font-size: 200%;
+	font-family: courier;
+	border: 3px solid powderblue;
+	padding: 30px; /*define space between taxt and border*/
+	margin: 50px; /*define space outside border*/
+}
+
+p.normal	{ /*pick specific thing with class*/
+
+}
+
+a:link, a:visited{
+	color: darkgreen;
+}
+
+a:hover{
+	text-decoration: blink;
+}
+
+a:active{
+	background-color: transparent;
+}
+
+table, th, td 	{
+	width: 50%;
+	border: 2px solid black;
+	padding: 15px;
+	text-align: left;
+	border-spacing: 5px;
+}
+
+table#table001 tr:nth-child(even)	{
+	background-color: #eeb;
+} 
+
+table#table001 tr:nth-child(odd)	{
+	background-color: #fff;
+}
+
+#table001 th{
+	color: blue;
+	background-color: lightblue;
+}
+
+.cities {
+  background-color: black;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+} 
