@@ -1,0 +1,460 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	margin: 0;
+	padding-bottom: -100px;
+	background-color: #FFF;
+	font-family: sans-serif;
+}
+
+/*--------------------------------- Top Navigation Bar ------------------------------------------*/
+
+.topnav
+{
+	height: 70px;
+	background-color: #FFF;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	display: flex;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.topnav .logo
+{
+	line-height: 35px;
+	font-family: 'Fira Sans', sans-serif;
+	color: #FFC934;
+	font-size: 40px;
+	letter-spacing: -3px;
+	padding: 15px 50px;
+	height: 40px;
+	text-shadow: 1px 1px 2px #000;
+}
+
+.logo:hover
+{
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.topnav > ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	flex: 1;
+}
+
+.topnav > ul > li
+{
+	float: left;
+}
+
+.navitem
+{
+	display: inline-block;
+	padding: 15px 30px;
+	height: 40px;
+	line-height: 40px;
+	color: #000;
+	text-decoration: none;
+	transition-duration: 0.3s;
+}
+
+.navitem:hover, .dropdown:hover > p
+{
+	color: #FFC934;
+	cursor: pointer;
+}
+
+.dropdown
+{
+	overflow: hidden;
+	background-color: #FFF;
+	color: #696969;
+	float: right;
+}
+
+.dropdownitems
+{
+	display: none;
+	position: relative;
+	transition: all 0.5 ease;
+	background-color: #FFF;
+	z-index: 1;
+}
+
+.dropdownitems p
+{
+	float: none;
+	color: #000;
+	padding: 12px 0 12px 0;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	transition-duration: 0.3s;
+}
+
+.dropdown:hover .dropdownitems
+{
+	display: block;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.dropdownitems p:hover
+{
+	color: #FFC934;
+	cursor: pointer;
+}
+
+/*--------------------------------- Page Container ------------------------------------------*/
+
+.container
+{
+	overflow: hidden;
+	background-color: #FFF;
+	padding: 20px 10px 20px 10px;
+	border-radius: 10px;
+	border-top: 2px solid #000;
+	border-left: 4px double #FFC934;
+	border-right: 4px double #FFC934;
+	border-bottom: 2px solid #000;
+	margin: 6rem 2rem 3rem 2rem;
+	color: #FFC934;
+	text-align: center;
+	margin-bottom: 167px;
+}
+
+.logo
+{
+	font-family: 'Fira Sans', sans-serif;
+	color: #FFC934;
+	font-size: 30px;
+	letter-spacing: -2px;
+	text-shadow: 1px 1px 2px #000;
+	text-align: center;
+	padding: 10px 20px;
+}
+
+hr
+{
+	margin: 10px 0 20px 0;
+	border: 1px solid #000;
+}
+
+.homelist
+{
+	margin: 100px 0;
+}
+
+.header
+{
+	display: inline-flex;
+}
+
+.wildcat1
+{
+	width: 86.4px;
+	height: 57.6px;
+}
+
+.wildcat1:hover
+{
+	transform: rotate(-30deg);
+}
+
+.wildcat2
+{
+	width: 86.4px;
+	height: 57.6px;
+}
+
+.wildcat2:hover
+{
+	transform: rotate(30deg);
+}
+
+/*--------------------------------- Home Page List ------------------------------------------*/
+
+.homelist ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	flex: 1;
+}
+
+.listitem
+{
+	display: inline-block;
+	font-size: 20px;
+	padding: 15px 30px;
+	height: 40px;
+	color: #000;
+	text-decoration: none;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-radius: 20px;
+	line-height: 40px;
+	width: 25%;
+}
+
+.listitem:hover
+{
+	color: #000;
+	box-shadow: 0 1px 20px #999;
+	background-color: rgba(255, 201, 52, 0.8);
+	cursor: pointer;
+}
+
+/*--------------------------------- Bottom Navigation Bar ------------------------------------------*/
+
+.bottomnav
+{
+	height: 100px;
+	background-color: #000;
+	box-shadow: 0px -8px 16px 0px rgba(0, 0, 0, 0.2);
+	display: flex;
+	width: 100%;
+	text-align: center;
+	bottom: 0;
+	left: 0;
+	position: relative;
+}
+
+.bottomnav > ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	flex: 1;
+	margin-left: 130px;
+}
+
+.bottomnav > ul > li
+{
+	display: inline-block;
+}
+
+.bottomitem
+{
+	display: inline-block;
+	padding: 30px 30px;
+	height: 40px;
+	color: #FFF;
+	text-decoration: none;
+	transition-duration: 0.3s;
+	line-height: 30px
+}
+
+.bottomitem:hover
+{
+	color: #FFC934;
+}
+
+.footerlogo
+{
+	font-family: 'Fira Sans', sans-serif;
+	color: #FFC934;
+	font-size: 30px;
+	letter-spacing: -2px;
+	text-shadow: 1px 1px 2px #000;
+	text-align: center;
+}
+
+.copyright
+{
+	float: right;
+	padding: 15px 20px 0 0;
+}
+
+.copyright a
+{
+	text-decoration: none;
+}
+
+.copyright p
+{
+	color: #FFF;
+	text-align: center;
+}
+
+.slogan
+{
+	font-size: 11px;
+}
+
+/*--------------------------------- Popup Windows ------------------------------------------*/
+
+.popup-deadlines, .popup-messages, .popup-contact
+{
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	visibility: hidden;
+	opacity: 0;
+	transform: scale(1.1);
+	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.popup-deadlines-content, .popup-messages-content, .popup-contact-content
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #FFF;
+	padding: 0;
+	width: 80%;
+	height: 75%;
+}
+
+.popup-exitd, .popup-exitm, .popup-exitc
+{
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	padding: 20px;
+	text-align: center;
+	color: #000;
+}
+
+.popup-deadlines-content .logo, .popup-messages-content .logo, .popup-contact-content .logo
+{
+	padding: 20px;
+	margin-left: 30px;
+}
+
+.popup-exitd:hover, .popup-exitd:focus
+{
+	color: #FFC934;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.popup-exitm:hover, .popup-exitm:focus
+{
+	color: #FFC934;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.popup-exitc:hover, .popup-exitc:focus
+{
+	color: #FFC934;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.popup-deadlines-content hr, .popup-messages-content hr, .popup-contact-content hr
+{
+	margin: 0 0 20px 0;
+}
+
+.popup-deadlines-body p, .popup-messages-body p
+{
+	color: #000;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.popup-deadlines-body, .popup-messages-body, .popup-contact-body
+{
+	padding: 20px 20px;
+	height: 70%;
+	background-color: #FFF;
+	margin: 0 100px;
+	display: block;
+	border-radius: 20px;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+	text-align: center;
+}
+
+.popup-contact-body h3
+{
+	line-height: 30px;
+	color: #000;
+	padding-bottom: 20px;
+}
+
+.popup-contact-body ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	flex: 1;
+}
+
+.contactinfo
+{
+	display: inline-block;
+	font-size: 20px;
+	padding: 30px 30px;
+	height: 40px;
+	color: #000;
+	text-decoration: none;
+	width: 30%;
+	background: #D3D3D3;
+	border: 1px solid #FFC934;
+}
+
+.contactinfo:hover
+{
+	box-shadow: 0 1px 20px #999;
+}
+
+.contactinfo b
+{
+	padding: 20px;
+	color: #000;
+}
+
+.contactinfo p
+{
+	font-size: 16px;
+}
+
+.contactinfo a
+{
+	font-size: 16px;
+	text-decoration: underline;
+	color: #000;
+}
+
+.contactinfo a:hover
+{
+	color: #FFC934;
+}
+
+.show-popupd, .show-popupm, .show-popupc
+{
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.0);
+	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+
+@media screen and (max-width: 400px) 
+{
+  .topnav a 
+  {
+    float: none;
+    width: 100%;
+  }
+}

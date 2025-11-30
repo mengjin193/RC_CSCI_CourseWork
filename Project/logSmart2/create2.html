@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Account</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+	<link rel="icon" href="wildcat.png">
+</head>
+<body>
+	<div class="create">
+		<div class="header-parent">
+			<div class="header-child">
+				<a href="http://www.randolphcollege.edu/" target="blank"><img src="wildcat.png" class="wildcat1"></a>
+				<div class="logo">logSmart</div>
+				<a href="http://www.randolphcollege.edu/" target="blank"><img src="wildcatflip.png" class="wildcat2"></a>
+			</div>
+		</div>
+		<h1>Create Account</h1>
+		<h2>Please fill in the form to create your account.</h2>
+		<p id="PWunmatch"></p>
+		<hr>
+		<form>
+			<label for="fn"><b>First Name</b></label>
+			<input type="text" name="fn" placeholder="Enter first name" required>
+
+			<label for="ln"><b>Last Name</b></label>
+			<input type="text" name="ln" placeholder="Enter last name" required>
+
+			<label for="email"><b>Email</b></label>
+			<input type="text" name="email" placeholder="Enter email" required>
+
+			<label for="pw"><b>Password</b></label>
+			<input type="Password" name="pw" placeholder="Enter password" required>
+
+			<label for="pwr"><b>Re-enter Password</b></label>
+			<input type="password" name="pwr" placeholder="Re-enter password" required>
+
+			<div class="wholechoice">
+				<div class="choice">
+					<p><b>* I am a </b><select name="acctype" id="acctype" required></p>
+						<option value=" "> </option>
+						<option value="Student">Student</option>
+						<option value="Professor">Professor</option>
+					</select>
+				</div>
+			</div>
+				
+			<p>By creating an account, you agree to our <a href="#">Terms & Conditions</a>.</p><br>
+
+			<input type="button" value="Create Account" id="createB"></input>
+
+			<div class="cancel">
+				<a href="login2.html">Cancel</a>
+			</div>
+		</form>
+
+	</div>
+	<script type="text/javascript" src="people.js"></script>
+	<script type="text/javascript" src="create2js.js"></script>
+</body>
+</html>
