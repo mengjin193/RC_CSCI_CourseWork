@@ -1,4 +1,0 @@
-https://medium.com/@nitinpatel_20236/challenge-of-building-a-calendar-with-pure-javascript-a86f1303267d
-http://www.iamnitinpatel.com/projects/calendar/
-
-[not use] https://designmodo.com/calendar-jquery-css3/
