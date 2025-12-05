@@ -1,0 +1,91 @@
+.container	{
+	width: 70%;	/*define the width of the calender*/
+	border: 2px dotted #FFC934;
+	border-radius: 3px;
+	text-align: center;
+	font-family: serif;
+	color: #FFC934;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.table	{
+	width: 100%; /*define the width of the calender in the border*/
+	text-align: center;
+}
+
+.head	{
+	color: black;
+	background-color: #FFC934;
+	padding: 15px; /*top-bot 15px each*/
+}
+
+#monthAndYear	{
+	font-weight: bold;
+}
+
+.bg-info	{ /*current day*/
+	background-color: #FFC934;
+	color: black
+}
+
+th	{
+	background-color: black;
+	color: #FFC934
+	width: 14%;
+	height: 40px;
+}
+
+
+td	{
+	width: 14%;
+	height: 40px;
+}
+
+
+tr 	{
+	background-color: dimgray;
+}
+
+/*---------------------------------change month button-----------------------------*/
+.button	{
+	border: none;
+	background-color: #FFC934;
+	font-size: 25px;
+	border-radius: 6px;
+	position: relative;
+	bottom: 5px;
+	width: 5%;
+}
+
+.button:hover	{
+	background-color: #F4B83F;
+	transition: 0.3s;
+}
+
+#previous	{
+	float: left;
+}
+
+#next	{
+	float: right;
+}
+
+
+
+/*------------------------------addNew button--------------------------------*/
+.addNewButton	{
+	font-size: 17px;
+	border: none;
+	border-radius: 50%;
+	float: right;
+	background-color: dimgray;
+	width: 20%;
+	margin-right: 3%;
+}
+
+
+
+/*------------------------------------------------------------------*/
+
+

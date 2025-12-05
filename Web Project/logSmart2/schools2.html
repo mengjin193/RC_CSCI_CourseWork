@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Schools</title>
+	<link rel="stylesheet" type="text/css" href="bottomnavstyle2.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+	<link rel="icon" href="wildcat.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	
+	<header class="topnav">
+		<ul>
+			<li>
+				<p style="text-decoration: none;">
+					<div class="logo" onclick="location.href='home2.html'">logSmart</div>
+				</p>
+			</li>
+			<li>
+				<p href="#" class="navitem" onclick="location.href='ResearchLog.html'">My Research</p>
+			</li>
+			<div class="dropdownl">
+				<p href="#" class="navitem">Notifications &#9662</p>
+				<ul class="dropdownitems">
+					<li><p id="popupbutton">Deadlines</p></li>
+					<li><p id="popupbutton">Messages</p></li>
+				</ul>
+			</div>
+			<li>
+				<p class="navitem" onclick="location.href='news2.html'">News</p>
+			</li>
+			<li>
+				<p href="#" class="navitem" onclick="location.href='about2.html'">About</p>
+			</li>
+			<li>
+				<p href="#" class="navitem" id="popupbutton">Contact Us</p>
+			</li>
+			<div class="dropdownr">
+				<p href="#" class="navitem">&#128100 Account &#9662</p>
+				<ul class="dropdownitems">
+					<li><p href="#" onclick="location.href='profile2.html'">My Profile</p></li>
+					<li><p href="#" onclick="location.href='reset2.html'">Reset Password</p></li>
+					<li><p href="login2.html" id="signoutbutton">Sign Out</p></li>
+				</ul>
+			</div>
+		</ul>
+	</header>
+
+	<div class="container">
+		<div class="header">
+			<a href="http://www.randolphcollege.edu/" target="blank"><img src="wildcat.png" class="wildcat1"></a>
+			<div class="logo">Affiliated Schools</div>
+			<a href="http://www.randolphcollege.edu/" target="blank"><img src="wildcatflip.png" class="wildcat2"></a>
+		</div>
+		<hr>
+		<div class="schools">
+			<ul>
+				<li class="randolphcollege" onclick="window.open('http://www.randolphcollege.edu/')">
+					<h2>Randolph College</h2>
+				</li>
+				<li class="lynchburguniversity" onclick="window.open('https://www.lynchburg.edu/')">
+					<h2>University of Lynchburg</h2>
+				</li>
+				<li class="sweetbriarcollege" onclick="window.open('https://sbc.edu/')">
+					<h2>Sweet Briar College</h2>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<footer class="bottomnav">
+		<ul>
+			<li>
+				<a href="schools2.html" class="bottomitem">Schools</a>
+			</li>
+			<li>
+				<a href="community2.html" class="bottomitem">Community</a>
+			</li>
+			<li>
+				<a href="help2.html" class="bottomitem">Help</a>
+			</li>
+			<li class="copyright">
+				<a href="home2.html">
+					<div class="footerlogo">logSmart</div>
+					<p style="font-size: 13px">&#169 2019 logSmart</p>
+					<p class="slogan">
+						<em>Research made simple.</em>
+					</p>
+				</a>
+			</li>
+		</ul>
+	</footer>
+
+	<div class="popup-deadlines">
+		<div class="popup-deadlines-content">
+			<span class="popup-exitd">&times</span>
+			<div class="logo">My Deadlines</div>
+			<hr>
+			<div class="popup-deadlines-body">
+				<p> Deadlines go here.</p>
+			</div>
+		</div>
+	</div>
+	<div class="popup-messages">
+		<div class="popup-messages-content">
+			<span class="popup-exitm">&times</span>
+			<div class="logo">My Messages</div>
+			<hr>
+			<div class="popup-messages-body">
+				<p> Messages go here.</p>
+			</div>
+		</div>
+	</div>
+	<div class="popup-contact">
+		<div class="popup-contact-content">
+			<span class="popup-exitc">&times</span>
+			<div class="logo">Contact Us</div>
+			<hr>
+			<div class="popup-contact-body">
+				<h3>Please feel free to contact us with any questions and/or feedback! Listed below are the email addresses of logSmart's creators as well as a link to the institution's contact information. We are happy to answer any questions and appreciate all feedback!</h3>
+				<ul>
+					<li>
+						<div class="contactinfo">
+							<b>Andrew Hayden</b>
+							<p><u>Email:</u> aphayden@randolphcollege.edu</p>
+						</div>
+					</li>
+					<li>
+						<div class="contactinfo">
+							<b>Mengjin Sun</b>
+							<p><u>Email:</u> msun@randolphcollege.edu</p>
+						</div>
+					</li>
+					<li>
+						<div class="contactinfo">
+							<b>Emad Davis</b>
+							<p><u>Email:</u> edavis@randolphcollege.edu</p>
+						</div>
+					</li>
+					<li>
+						<div class="contactinfo">
+							<b>Randolph College</b><br>
+							<a href="http://www.randolphcollege.edu/directory/" target="blank">Directory and Information</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="Main2.js"></script>
+</body>
+</html>

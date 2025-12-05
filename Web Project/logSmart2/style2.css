@@ -1,0 +1,482 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: #FFF;
+	background-attachment: fixed;
+	font-family: sans-serif;
+}
+
+.logo
+{
+	font-family: 'Fira Sans', sans-serif;
+	color: #FFC934;
+	font-size: 40px;
+	letter-spacing: -3px;
+	height: 40px;
+	text-shadow: 1px 1px 2px #000;
+	padding: 0 30px 30px 30px;
+}
+
+/*--------------------------------- Login Page/Forms ------------------------------------------*/
+
+.loginpage
+{
+	width: 400px;
+	height: 530px;
+	background: #FFF;
+	color: #000;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 30px 30px;
+	border-radius: 20px;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+
+.header
+{
+	display: inline-flex;
+}
+
+.wildcat1
+{
+	width: 64.8px;
+	height: 43.2px;
+}
+
+.wildcat1:hover
+{
+	transform: rotate(-30deg);
+}
+
+.wildcat2
+{
+	width: 64.8px;
+	height: 43.2px;
+}
+
+.wildcat2:hover
+{
+	transform: rotate(30deg);
+}
+
+.loginpage h1
+{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.loginpage h2
+{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 14px;
+}
+
+hr
+{
+	border: 1px solid #FFC934;
+	margin-bottom: 10px;
+}
+
+.loginpage p
+{
+	margin: 0;
+	padding: 0;
+}
+
+.loginpage input[type="text"], input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #000;
+	background: transparent;
+	height: 40px;
+	color: #000;
+	font-size: 16px;
+	width: 100%;
+	margin: 5px 0 20px 0;
+}
+
+.loginpage input[type="text"]:focus, input[type="password"]:focus
+{
+	background-color: transparent;
+	outline: none;
+}
+
+.loginpage input[type="checkbox"]
+{
+	width: 13px;
+	height: 13px;
+	margin: 0;
+	padding: 0;
+	vertical-align: bottom;
+	position: relative;
+	top: -2px;
+}
+
+.loginpage input[type="button"]
+{
+	border: none;
+	outline: none;
+	margin-top: 20px;
+	height: 40px;
+	width: 100%;
+	background: #FFC934;
+	color: #000;
+	font-size: 18px;
+	border-radius: 20px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+.loginpage input[type="button"]:hover
+{
+	cursor: pointer;
+	background-color: rgba(255,201,52,0.7);
+	color: #000;
+}
+
+.loginpage a
+{
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000;
+}
+
+.loginpage a:hover
+{
+	color: #FFC934;
+}
+
+.leftlink
+{
+	display: inline-block;
+	margin: 25px 0 0 30px;
+}
+
+.rightlink
+{
+	display: inline-block;
+	margin: 25px 0 0 30px;
+}
+
+/*--------------------------------- Create Account Page/Forms ------------------------------------------*/
+
+.create
+{
+	width: 500px;
+	height: 830px;
+	background: #FFF;
+	color: #000;
+	top: 35%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -20%);
+	box-sizing: border-box;
+	padding: 30px 30px;
+	border-radius: 20px;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+	margin: 0 auto;
+}
+
+.header-parent
+{
+	text-align: center;
+}
+
+.header-child
+{
+	display: inline-flex;
+}
+
+.create h1
+{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+	color: #000;
+}
+
+.create h2
+{
+	margin: 0;
+	padding: 0 0 30px;
+	text-align: center;
+	font-size: 14px;
+} 
+
+.create p
+{
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+.create input[type="text"], input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #000;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #000;
+	font-size: 16px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.wholechoice
+{
+	font-size: 13px;
+	padding: 5px 8px 12px 0;
+	position: relative;
+}
+
+.wholechoice .choice select
+{
+	margin-left: 5px;
+	background: transparent;
+	border: 1px solid #000;
+	border-radius: 3px;
+	outline: none;
+	font-size: 14px;
+}
+
+.create input[type="button"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	width: 100%;
+	background: #FFC934;
+	color: #000;
+	font-size: 18px;
+	border-radius: 20px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+.create input[type="button"]:hover
+{
+	cursor: pointer;
+	background-color: rgba(255,201,52,0.7);
+	color: #000;
+}
+
+.create a
+{
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 20px;
+	color: #FFC934;
+}
+
+.create a:hover
+{
+	color: #000;
+}
+
+.cancel
+{
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 200px;
+}
+
+.cancel a
+{
+	color: #000;
+}
+
+.cancel a:hover
+{
+	color: #FFC934;
+}
+
+/*--------------------------------- Forgot PW Page/Forms ------------------------------------------*/
+
+.forgotten
+{
+	width: 400px;
+	height: 400px;
+	background: #FFF;
+	color: #000;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 30px 30px;
+	border-radius: 20px;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+}
+
+.forgotten h1
+{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+	color: #000;
+}
+
+.forgotten h2
+{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.forgotten input[type="text"]
+{
+	border: none;
+	border-bottom: 1px solid #000;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #000;
+	font-size: 16px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.forgotten input[type="submit"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	width: 100%;
+	background-color: #FFC934;
+	color: #000;
+	font-size: 18px;
+	border-radius: 20px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+.forgotten input[type="submi"]:hover
+{
+	cursor: pointer;
+	background-color: rgba(255,201,52,0.7);
+	color: #000;
+}
+
+.forgotten a
+{
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000;
+}
+
+.forgotten a:hover
+{
+	color: #FFC934;
+}
+
+/*--------------------------------- Reset PW Page/Forms ------------------------------------------*/
+
+.reset
+{
+	width: 400px;
+	height: 520px;
+	background: #FFF;
+	color: #000;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 30px 30px;
+	border-radius: 20px;
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+	overflow: inherit;
+}
+
+.reset h1
+{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+	color: #000;
+}
+
+.reset h2
+{
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.reset input[type="password"]
+{
+	border: none;
+	border-bottom: 1px solid #000;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	color: #000;
+	font-size: 16px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.reset input[type="button"]
+{
+	border: none;
+	outline: none;
+	height: 40px;
+	width: 100%;
+	background-color: #FFC934;
+	color: #000;
+	font-size: 18px;
+	border-radius: 20px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+
+.reset input[type="button"]:hover
+{
+	cursor: pointer;
+	background-color: rgba(255,201,52,0.7);
+	color: #000;
+}
+
+.cancel a
+{
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 20px;
+	color: #000;
+}
+
+.cancel a:hover
+{
+	color: #FFC934;
+}
+
+.resetlogin
+{
+	text-decoration: underline;
+	color: #008000;
+	font-size: 16px;
+}
+
+.resetlogin:hover
+{
+	color: #000;
+}
+
+
+

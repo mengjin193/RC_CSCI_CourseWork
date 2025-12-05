@@ -1,0 +1,306 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	margin: 0;
+	padding-bottom: 10px;
+	background-color: #696969;
+	font-family: sans-serif;
+}
+
+.grid
+{
+	display: grid;
+	height: 100vh;
+	grid-gap: 20px;
+	grid-template-columns: 300px 1fr 1fr 1fr;
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas: 
+	"topnav topnav topnav topnav"
+	"leftcolumn rightcolumn rightcolumn rightcolumn"
+	"leftcolumn rightcolumn rightcolumn rightcolumn"
+	"leftcolumn rightcolumn rightcolumn rightcolumn"
+	;
+
+}
+
+.topnav
+{
+	grid-area: topnav;
+	height: 70px;
+	background-color: #FFF;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	display: flex;
+}
+
+.topnav .logo
+{
+	line-height: 35px;
+	font-family: 'Fira Sans', sans-serif;
+	color: #FFC934;
+	font-size: 40px;
+	letter-spacing: -3px;
+	padding: 15px 50px;
+	height: 40px;
+	text-shadow: 1px 1px 2px #000;
+}
+
+.logo:hover
+{
+	background-color: transparent;
+}
+
+.topnav > ul
+{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	flex: 1;
+}
+
+.topnav > ul > li
+{
+	float: left;
+}
+
+.navitem
+{
+	display: inline-block;
+	padding: 15px 30px;
+	height: 40px;
+	line-height: 40px;
+	color: #000;
+	text-decoration: none;
+	transition-duration: 0.3s;
+}
+
+.navitem:hover, .dropdown:hover > a
+{
+	color: #FFC934;
+}
+
+.dropdown
+{
+	overflow: hidden;
+	background-color: #FFF;
+	color: #696969;
+	float: right;
+}
+
+.dropdownitems
+{
+	display: none;
+	position: relative;
+	transition: all 0.5 ease;
+	background-color: #FFF;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	border: 1px solid #000;
+	width: 100%;
+}
+
+.dropdownitems a
+{
+	float: none;
+	color: #000;
+	padding: 12px 0 12px 0;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	transition-duration: 0.3s;
+}
+
+.dropdown:hover .dropdownitems
+{
+	display: block;
+}
+
+.dropdownitems a:hover
+{
+	color: #FFC934;
+}
+
+
+
+
+.logo
+{
+	font-family: 'Fira Sans', sans-serif;
+	color: #FFC934;
+	font-size: 30px;
+	letter-spacing: -2px;
+	text-shadow: 1px 1px 2px #000;
+	text-align: center;
+	padding: 10px 0;
+}
+
+hr
+{
+	margin: 10px 0 20px 0;
+	border: 1px solid #000;
+}
+
+#line
+{
+	display: flex;
+	justify-content: flex-end;
+	margin: 10px 0 20px 0;
+	border: 1px solid #000;
+}
+
+
+.leftcolumn
+{
+	grid-area: leftcolumn;
+	overflow-x: hidden;
+	background-color: #FFF;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #000;
+	height: 55vh;
+	margin-left: 1rem;
+	align-items: center;
+}
+
+	.leftcolumn > ul
+	{
+		list-style-image: url('wildcat.png');
+		padding: 0;
+		display: table;
+	}
+
+	.leftcolumn > ul > li
+	{
+		margin-left: 45px;
+	}
+
+	.panelitem
+	{
+		text-decoration: none;
+		line-height: 30px;
+		padding: 15px;
+		height: 40px;
+		color: #000;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.panelitem:hover
+	{
+		color: #FFC934;
+		transition-duration: 0.3s;
+	}
+
+
+.rightcolumn
+{
+	grid-area: rightcolumn;
+	overflow: hidden;
+	background-color: #FFF;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #000;
+	/*display: grid;*/
+	margin-right: 1rem;
+	color: #FFC934;
+	text-align: center;
+}
+
+.container	{
+	width: 100%;	/*define the width of the calender*/
+	border: 2px dotted #FFC934;
+	border-radius: 3px;
+	text-align: center;
+	font-family: serif;
+	color: #FFC934;
+}
+
+
+.table	{
+	width: 100%; /*define the width of the calender in the border*/
+	text-align: center;
+}
+
+.head	{
+	color: black;
+	background-color: #FFC934;
+	padding: 15px; /*top-bot 15px each*/
+}
+
+#monthAndYear	{
+	font-weight: bold;
+}
+
+.bg-info	{ /*current day*/
+	background-color: #FFC934;
+	color: black
+}
+
+th	{
+	background-color: black;
+	color: #FFC934
+	width: 14%;
+	height: 40px;
+}
+
+
+td	{
+	width: 14%;
+	height: 40px;
+}
+
+
+tr 	{
+	background-color: dimgray;
+}
+
+/*---------------------------------change month button-----------------------------*/
+.button	{
+	border: none;
+	background-color: #FFC934;
+	font-size: 25px;
+	border-radius: 6px;
+	position: relative;
+	bottom: 5px;
+	width: 5%;
+}
+
+.button:hover	{
+	background-color: #F4B83F;
+	transition: 0.3s;
+}
+
+#previous	{
+	float: left;
+}
+
+#next	{
+	float: right;
+}
+
+
+
+/*------------------------------addNew button--------------------------------*/
+.addNewButton	{
+	font-size: 17px;
+	border: none;
+	border-radius: 50%;
+	float: right;
+	background-color: #696969;
+	width: 20%;
+	margin-right: 3%;
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
